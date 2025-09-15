@@ -6,19 +6,34 @@
 				display: flex;
 			}
 
-			table {
+			.rounded {
+				border-radius: 15px;
+			}
+
+			#main {
 				vertical-align: middle;
 				margin: auto;
 				display: flex;
 				flex-direction: column;
 				background-color: lightgray;
 				padding: 15px;
-				border-radius: 25px;
+			}
+
+			label {
+				font-weight: bold;
+			}
+
+			input[type="submit"] {
+				background-color: blue;
+			}
+
+			input[type="submit"]:hover {
+				background-color: red;
 			}
 		</style>
 	</head>
 	<body>
-		<table>
+		<table id="main" class="rounded">
 			<form>
 				<tr>
 					<td><label for="name">Name</label></td>
@@ -53,7 +68,7 @@
 				<tr>
 					<td></td>
 					<td>
-						<input type="submit" value="Submit">
+						<input class="rounded" type="submit" value="Submit">
 					</td>
 				</tr>
 			</form>
