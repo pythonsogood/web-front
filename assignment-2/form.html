@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				display: flex;
+			}
+
+			table {
+				vertical-align: middle;
+				margin: auto;
+				display: flex;
+				flex-direction: column;
+				background-color: lightgray;
+				padding: 15px;
+				border-radius: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<form>
+				<tr>
+					<td><label for="name">Name</label></td>
+					<td><input type="text" name="name" /></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email</label></td>
+					<td><input type="email" name="name" /></td>
+				</tr>
+				<tr>
+					<td><label for="role">Role</label></td>
+					<td>
+						<select name="role">
+							<option value="student">Student</option>
+							<option value="teacher">Teacher</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="yesno">Yes/No</label></td>
+					<td>
+						<label>
+							<input type="radio" name="yesno" value="yes">
+							Yes
+						</label>
+						<label>
+							<input type="radio" name="yesno" value="no">
+							No
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" value="Submit">
+					</td>
+				</tr>
+			</form>
+		</table>
+	</body>
+</html>

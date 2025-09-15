@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/reset.css">
+		<style>
+			.header {
+				background-color: blue;
+				width: 100%;
+				min-height: 50px;
+				text-align: center;
+				align-content: center;
+			}
+
+			.header div {
+				color: white;
+			}
+
+			.navbar {
+				background-color: lightblue;
+				width: 100%;
+				min-height: 5px;
+				text-align: center;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+
+			.navbar-list li {
+				display: inline;
+				padding: 5px;
+				border-radius: 10px;
+			}
+
+			.navbar-list li a {
+				border: none;
+				text-decoration: none;
+				color: blue;
+			}
+
+			.navbar-list li.selected {
+				background-color: blue;
+			}
+
+			.navbar-list li.selected a {
+				color: white;
+			}
+
+			.sidebar {
+				background-color: lightgray;
+				float: left;
+				margin: 5px;
+				position: fixed;
+				width: 150px;
+				align-content: center;
+				padding: 5px;
+			}
+
+			.sidebar-list {
+				text-align: center;
+			}
+
+			.main_content {
+				background-color: lightgray;
+				margin: 5px 5px 5px 170px;
+				padding: 5px;
+			}
+
+			.footer {
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				text-align: center;
+				background-color: blue;
+				color: white;
+				padding: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div>Header</div>
+		</div>
+		<div class="navbar">
+			<ul class="navbar-list">
+				<li class="selected"><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="sidebar">
+			<ul class="sidebar-list">
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+			</ul>
+		</div>
+		<div class="main_content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est a voluptatem distinctio ab minima veniam quisquam iusto nemo fuga quo veritatis, accusamus dignissimos vero cum corrupti cupiditate magnam ea deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestias aliquam vel voluptatum omnis minus ipsa et optio, sequi blanditiis quo. Veritatis, facilis enim fugit asperiores dignissimos velit tempora voluptatibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa adipisci a autem labore est nisi, saepe eligendi praesentium quidem quaerat harum eius quod minima quasi tenetur, deserunt optio, numquam error.</p>
+		</div>
+		<div class="footer">
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus non aspernatur aliquid tempore veritatis porro quam ut. Illo laudantium excepturi blanditiis tempore eum! Pariatur incidunt reiciendis suscipit quisquam corporis eveniet!</p>
+		</div>
+	</body>
+</html>

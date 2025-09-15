@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			table, th, td {
+				border: 1px solid black;
+			}
+
+			th, td {
+				padding: 4px;
+				text-align: center;
+			}
+
+			tr:nth-child(even) {
+				background-color: lightgray;
+			}
+
+			thead {
+				background-color: red;
+				color: white;
+				text-shadow: 0 0 5px black;
+			}
+
+			tr.highlight-row {
+				background-color: yellowgreen;
+			}
+
+			#heading {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="heading">Page Heading</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Subject</th>
+					<th>Grade</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Foo</td>
+					<td>Math</td>
+					<td>A</td>
+				</tr>
+				<tr class="highlight-row">
+					<td>Bar</td>
+					<td>Math</td>
+					<td>A</td>
+				</tr>
+				<tr>
+					<td>Baz</td>
+					<td>Math</td>
+					<td>A</td>
+				</tr>
+				<tr>
+					<td>Foo</td>
+					<td>Math</td>
+					<td>A</td>
+				</tr>
+				<tr>
+					<td>Bar</td>
+					<td>Math</td>
+					<td>A</td>
+				</tr>
+				<tr>
+					<td>Baz</td>
+					<td>Math</td>
+					<td>A</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

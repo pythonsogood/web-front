@@ -1,0 +1,56 @@
+body {
+	background-color: lightgray;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: large;
+	margin: 5px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ul li {
+	margin-left: 35px;
+}
+
+.header {
+	background-color: blue;
+	width: 100%;
+	min-height: 50px;
+	text-align: center;
+	align-content: center;
+}
+
+.header div {
+	color: white;
+}
+
+.main_content {
+	background-color: white;
+	max-width: 75%;
+	margin: 15px auto;
+	padding: 5px;
+}
+
+.main_content.center {
+	text-align: center;
+}
+
+.main_content .portrait {
+	max-width: 50%;
+	margin: 15px;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: blue;
+	color: white;
+	padding: 15px;
+}
