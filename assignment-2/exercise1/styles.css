@@ -1,18 +1,40 @@
 body {
 	background-color: lightgray;
+
+	font-size: 18px;
+	font-family: "Tinos", serif;
 }
 
 h1 {
 	font-weight: bold;
-	font-size: large;
+	font-size: 24px;
 	margin: 5px;
+	font-family: "Lexend Deca", sans-serif;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 22px;
+	margin: 4px;
+	font-family: "Lexend Deca", sans-serif;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 20px;
+	margin: 2px;
+	font-family: "Lexend Deca", sans-serif;
+}
+
+ol {
+	list-style: decimal;
 }
 
 ul {
 	list-style: disc;
 }
 
-ul li {
+li {
 	margin-left: 35px;
 }
 
@@ -22,6 +44,10 @@ ul li {
 	min-height: 50px;
 	text-align: center;
 	align-content: center;
+	border-bottom: 2px solid black;
+	font-weight: bold;
+	font-size: 32px;
+	color: white;
 }
 
 .header div {
@@ -33,6 +59,7 @@ ul li {
 	max-width: 75%;
 	margin: 15px auto;
 	padding: 5px;
+	border: 2px solid black;
 }
 
 .main_content.center {
@@ -41,7 +68,21 @@ ul li {
 
 .main_content .portrait {
 	max-width: 50%;
+	max-height: 300px;
 	margin: 15px;
+	border-radius: 15px;
+	border: 1px solid black;
+}
+
+.main_content p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 1.2;
+}
+
+.btn:hover {
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
 .footer {
@@ -53,4 +94,5 @@ ul li {
 	background-color: blue;
 	color: white;
 	padding: 15px;
+	border-top: 2px solid black;
 }

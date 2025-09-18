@@ -17,6 +17,16 @@
 				flex-direction: column;
 				background-color: lightgray;
 				padding: 15px;
+				width: 500px;
+			}
+
+			tbody {
+				display: flex;
+				flex-direction: column;
+			}
+
+			tr {
+				margin: auto;
 			}
 
 			label {
@@ -25,10 +35,16 @@
 
 			input[type="submit"] {
 				background-color: blue;
+				color: white;
 			}
 
 			input[type="submit"]:hover {
 				background-color: red;
+			}
+
+			textarea {
+				width: 150px;
+				resize: vertical;
 			}
 		</style>
 	</head>
@@ -37,11 +53,11 @@
 			<form>
 				<tr>
 					<td><label for="name">Name</label></td>
-					<td><input type="text" name="name" /></td>
+					<td><input type="text" name="name" required /></td>
 				</tr>
 				<tr>
 					<td><label for="email">Email</label></td>
-					<td><input type="email" name="name" /></td>
+					<td><input type="email" name="name" required /></td>
 				</tr>
 				<tr>
 					<td><label for="role">Role</label></td>
@@ -56,14 +72,18 @@
 					<td><label for="yesno">Yes/No</label></td>
 					<td>
 						<label>
-							<input type="radio" name="yesno" value="yes">
+							<input type="radio" name="yesno" value="yes" required>
 							Yes
 						</label>
 						<label>
-							<input type="radio" name="yesno" value="no">
+							<input type="radio" name="yesno" value="no" required>
 							No
 						</label>
 					</td>
+				</tr>
+				<tr>
+					<td><label for="comments">Comments</label></td>
+					<td><textarea name="comments"></textarea></td>
 				</tr>
 				<tr>
 					<td></td>

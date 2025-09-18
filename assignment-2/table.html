@@ -2,13 +2,20 @@
 <html>
 	<head>
 		<style>
-			table, th, td {
+			body {
+				display: flex;
+				flex-direction: column;
+			}
+
+			table {
+				margin: auto;
 				border: 1px solid black;
 			}
 
 			th, td {
 				padding: 4px;
 				text-align: center;
+				border: 1px solid black;
 			}
 
 			tr:nth-child(even) {
@@ -27,6 +34,7 @@
 
 			#heading {
 				text-align: center;
+				margin: 0 auto;
 			}
 		</style>
 	</head>
