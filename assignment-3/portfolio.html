@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				display: grid;
+				grid-template-columns: 1fr 150px;
+				grid-template-rows: auto 1fr auto;
+				grid-template-areas:
+					"header header"
+					"main sidebar"
+					"footer footer";
+				background-color: lightgray;
+				column-gap: 50px;
+				row-gap: 35px;
+				margin: 0;
+			}
+
+			.header {
+				display: flex;
+				background-color: silver;
+				width: 100%;
+				grid-area: header;
+				justify-content: space-around;
+				align-items: center;
+			}
+
+			.logo {
+				display: flex;
+				align-items: center;
+			}
+
+			.logo div {
+				color: black;
+				font-weight: bold;
+				font-size: larger;
+			}
+
+			.navbar {
+				display: flex;
+				align-items: center;
+			}
+
+			.navbar ul {
+				margin: 0;
+				padding: 0;
+				display: flex;
+				flex-direction: row;
+				list-style: none;
+			}
+
+			.navbar ul li {
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+
+			.sidebar {
+				display: flex;
+				background-color: white;
+				grid-area: sidebar;
+				padding: 10px;
+				width: 80%;
+				height: fit-content;
+				border-radius: 15px;
+				align-items: center;
+			}
+
+			.sidebar ul {
+				margin: 0;
+				padding: 0;
+				margin-left: auto;
+				margin-right: auto;
+				display: flex;
+				flex-direction: column;
+				list-style: none;
+			}
+
+			.main_content {
+				width: 100%;
+				display: flex;
+				background-color: white;
+				border-radius: 15px;
+				padding: 1%;
+				margin-left: 15px;
+				grid-area: main;
+			}
+
+			.gallery {
+				display: grid;
+				margin-left: auto;
+				margin-right: auto;
+				justify-content: space-between;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 15px;
+			}
+
+			.image {
+				display: flex;
+				flex-direction: column;
+				width: 150px;
+				height: 150px;
+				align-items: center;
+			}
+
+			.image img {
+				width: 100%;
+				height: 100%;
+				border-radius: 30px;
+			}
+
+			.image figcaption {
+				text-align: center;
+				visibility: collapse;
+			}
+
+			.image:hover figcaption {
+				visibility: visible;
+			}
+
+			.footer {
+				margin-top: auto;
+				display: flex;
+				width: 100%;
+				height: 75px;
+				background-color: white;
+				grid-area: footer;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.footer p {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<svg xmlns="http://www.w3.org/2000/svg" height="64px" viewBox="0 -960 960 960" width="64px" fill="green"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H160v400Zm140-40-56-56 103-104-104-104 57-56 160 160-160 160Zm180 0v-80h240v80H480Z"/></svg>
+				<div>Portfolio</div>
+			</div>
+			<div class="navbar">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contacts</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main_content">
+			<div class="gallery">
+				<div class="image">
+					<img src="dog.jpg" alt="dog img">
+					<figcaption>Dog</figcaption>
+				</div>
+				<div class="image">
+					<img src="dog.jpg" alt="dog img">
+					<figcaption>Dog</figcaption>
+				</div>
+				<div class="image">
+					<img src="dog.jpg" alt="dog img">
+					<figcaption>Dog</figcaption>
+				</div>
+				<div class="image">
+					<img src="dog.jpg" alt="dog img">
+					<figcaption>Dog</figcaption>
+				</div>
+				<div class="image">
+					<img src="dog.jpg" alt="dog img">
+					<figcaption>Dog</figcaption>
+				</div>
+				<div class="image">
+					<img src="dog.jpg" alt="dog img">
+					<figcaption>Dog</figcaption>
+				</div>
+				<div class="image">
+					<img src="dog.jpg" alt="dog img">
+					<figcaption>Dog</figcaption>
+				</div>
+				<div class="image">
+					<img src="dog.jpg" alt="dog img">
+					<figcaption>Dog</figcaption>
+				</div>
+				<div class="image">
+					<img src="dog.jpg" alt="dog img">
+					<figcaption>Dog</figcaption>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contacts</a></li>
+			</ul>
+		</div>
+		<div class="footer">
+			<p>© 2025 Portfolio | All rights reserved.</p>
+		</div>
+	</body>
+</html>
