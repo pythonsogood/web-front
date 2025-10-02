@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.container {
+				display: grid;
+				grid-template-columns: auto auto auto;
+				gap: 15px;
+			}
+
+			.box {
+				background-color: blue;
+				width: 100px;
+				height: 100px;
+			}
+
+			@media screen and (width < 768px) {
+				.container {
+					grid-template-columns: auto;
+				}
+			}
+
+			@media screen and (768px <= width < 1024px) {
+				.container {
+					grid-template-columns: auto auto;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+	</body>
+</html>

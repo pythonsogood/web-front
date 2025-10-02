@@ -2,9 +2,70 @@
 <html>
 	<head>
 		<title>My First Webpage</title>
+		<style>
+			body {
+				margin: 0;
+				display: flex;
+				flex-flow: column;
+			}
+
+			#main {
+				margin: auto;
+			}
+
+			#device {
+				margin: auto;
+				text-align: center;
+			}
+
+			.phone, .small_phone, .tablet, .desktop {
+				display: none;
+			}
+
+			@media screen and (width < 480px) {
+				.phone {
+					display: inline;
+				}
+			}
+
+			@media screen and (480px <= width < 768px) {
+				.small_phone {
+					display: inline;
+				}
+			}
+
+			@media screen and (768px <= width < 1024px) {
+				.tablet {
+					display: inline;
+				}
+			}
+
+			@media screen and (width >= 1024px) {
+				.desktop {
+					display: inline;
+				}
+			}
+
+			@media (color) {
+				body {
+					background-color: #cdcdcd;
+				}
+
+				table {
+					background-color: white;
+				}
+
+				#device span {
+					text-shadow: 1px 1px 2px pink;
+				}
+			}
+		</style>
 	</head>
 	<body>
-		<table border="1">
+		<a id="device">
+			You are currently using: <span class="phone">Phone</span><span class="small_phone">Small Phone</span><span class="tablet">Tablet</span><span class="desktop">Desktop</span>!
+		</a>
+		<table id="main" border="1">
 			<thead>
 				<tr>
 					<th>Menu</th>
