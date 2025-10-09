@@ -1,0 +1,38 @@
+html, body {
+	display: flex;
+	flex-direction: column;
+	background-color: lightgray;
+	margin: 0;
+	height: 100%;
+}
+
+main {
+	height: 100%;
+}
+
+footer {
+	height: 75px;
+}
+
+@media (max-width: 575.98px) {
+	body {
+		font-size: 14px;
+	}
+
+	footer {
+		font-size: 0.8rem;
+		padding: 10px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+	body {
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 992px) {
+	body {
+		font-size: 16px;
+	}
+}

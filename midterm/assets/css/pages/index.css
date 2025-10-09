@@ -1,0 +1,13 @@
+.post {
+	background-color: white;
+	max-height: 200px;
+}
+
+.post p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.post p button {
+	flex-shrink: 0;
+}
