@@ -1,13 +1,27 @@
-.post {
-	background-color: white;
-	max-height: 200px;
+.posts {
+	max-width: 900px;
 }
 
-.post p {
-	overflow: hidden;
-	text-overflow: ellipsis;
+.post:nth-child(even) {
+	background-color: var(--bg-tertiary);
 }
 
-.post p button {
-	flex-shrink: 0;
+.post .body {
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	line-clamp: 4;
+	line-height: 1.35em;
+	-webkit-box-orient: vertical;
+}
+
+@media (max-width: 767.98px) {
+	.posts {
+		max-width: 500px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.posts {
+		max-width: 700px;
+	}
 }

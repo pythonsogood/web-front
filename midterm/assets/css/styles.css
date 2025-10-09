@@ -1,16 +1,36 @@
+:root {
+	--bg-primary: white;
+	--bg-secondary: lightgray;
+	--bg-tertiary: #f0f0f0;
+}
+
 html, body {
+	font-family: "Lato", sans-serif;
+
 	display: flex;
 	flex-direction: column;
-	background-color: lightgray;
+	background-color: var(--bg-secondary);
 	margin: 0;
-	height: 100%;
+	min-height: 100vh;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background-color: var(--bg-primary);
 }
 
 main {
-	height: 100%;
+	flex: 1;
+}
+
+.container {
+	background-color: var(--bg-primary);
 }
 
 footer {
+	background-color: var(--bg-primary);
 	height: 75px;
 }
 
@@ -35,4 +55,159 @@ footer {
 	body {
 		font-size: 16px;
 	}
+}
+
+.material-symbols-outlined {
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 400,
+		'GRAD' 0,
+		'opsz' 24;
+	vertical-align: middle;
+}
+
+.material-symbols-outlined.like {
+	color: red;
+}
+
+.material-symbols-outlined.comment {
+	color: darkslategray;
+}
+
+.material-symbols-outlined.views {
+	color: darkslategray;
+}
+
+.fa-facebook {
+	color: #0866FF;
+	width: 15px;
+	text-align: center;
+}
+
+.fa-telegram {
+	color: #2a9ed6;
+}
+
+.fa-youtube {
+	color: red;
+}
+
+.lexend-deca-thin {
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.lexend-deca-light {
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.lexend-deca-regular {
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.lexend-deca-bold {
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.lexend-deca-black {
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.lexend-deca-thin-italic {
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.lexend-deca-light-italic {
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.lexend-deca-regular-italic {
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.lexend-deca-bold-italic {
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.lexend-deca-black-italic {
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+}
+
+.lato-thin {
+	font-family: "Lato", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.lato-light {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.lato-regular {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.lato-bold {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.lato-black {
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.lato-thin-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.lato-light-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.lato-regular-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.lato-bold-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.lato-black-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-style: italic;
 }
