@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			form {
+				display: flex;
+				flex-direction: column;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<label>Name: <input type="text" name="name" maxlength="64" required></label>
+			<label>Email: <input type="email" name="email" maxlength="254" required></label>
+			<label>Message: <textarea name="message" maxlength="1024" required></textarea></label>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>
