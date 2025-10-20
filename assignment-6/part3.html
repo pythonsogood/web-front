@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<script>
+			window.onload = () => {
+				const div = document.querySelector("div");
+
+				div.addEventListener("mouseover", () => div.style.backgroundColor = "red");
+				div.addEventListener("mouseout", () => div.style.backgroundColor = "blue");
+
+				const input = document.querySelector("input");
+				const div2 = document.querySelectorAll("div")[1];
+
+				input.addEventListener("input", () => div2.innerText = input.value);
+			}
+		</script>
+	</head>
+	<body>
+		<div style="background-color: blue; width: 100px; height: 100px"></div>
+
+		<input type="text">
+		<div></div>
+	</body>
+</html>

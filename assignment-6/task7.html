@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			form {
+				display: flex;
+				flex-direction: column;
+			}
+		</style>
+		<script>
+			window.onload = () => {
+				const form = document.querySelector("form");
+
+				form.addEventListener("submit", event => {
+					let valid = true;
+
+					for (const input of form.querySelectorAll("input")) {
+						if (input.value.length <= 0) {
+							valid = false;
+							break;
+						}
+					}
+
+					const a = form.querySelector("a");
+
+					if (!valid) {
+						event.preventDefault();
+						event.stopPropagation();
+
+						a.innerText = "Please fill out all the fields!";
+					} else {
+						a.innerText = "";
+					}
+				});
+			};
+		</script>
+	</head>
+	<body>
+		<form>
+			<label>Name: <input type="text" name="name" maxlength="64"></label>
+			<label>Email: <input type="email" name="email" maxlength="254"></label>
+			<label>Password: <input type="password" maxlength="64"></label>
+			<input type="submit" value="Submit">
+			<a></a>
+		</form>
+	</body>
+</html>

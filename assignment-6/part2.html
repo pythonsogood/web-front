@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<script>
+			function changeParagraphText() {
+				const paragraph = document.querySelector("p");
+				paragraph.textContent = "New text";
+			}
+
+			function changeDivColor() {
+				const div = document.querySelector("div");
+				div.style.backgroundColor = "red";
+			}
+
+			function changeDivFontSize() {
+				const div = document.querySelector("div");
+				div.style.fontSize = "20px";
+			}
+
+			function addLi() {
+				const ul = document.querySelector("ul");
+
+				const li = document.createElement("li");
+				li.textContent = `New Item ${ul.children.length + 1}`;
+				ul.appendChild(li);
+			}
+
+			function removeLi() {
+				const ul = document.querySelector("ul");
+				if (ul.lastChild == null) {
+					return;
+				}
+
+				ul.removeChild(ul.lastChild);
+			}
+		</script>
+	</head>
+	<body>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam et praesentium saepe voluptates expedita quasi alias. Ex fugiat illo, quod consequatur vero iusto amet similique quia provident pariatur nam consectetur.</p>
+		<button onclick="changeParagraphText();">change text</button>
+
+		<div style="background-color: blue; width: 100px; height: 100px">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+		<button onclick="changeDivColor();">change color</button>
+		<button onclick="changeDivFontSize();">change font size</button>
+
+		<ul>
+		</ul>
+		<button onclick="addLi();">Add Item</button>
+		<button onclick="removeLi();">Remove Item</button>
+	</body>
+</html>
