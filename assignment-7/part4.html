@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+		<title>Document</title>
+		<script>
+			$(document).ready(() => {
+				$("#div1").animate({
+					width: "200px",
+					height: "200px",
+					top: "100px",
+					left: "100px"
+				}, 1000);
+
+				$("#div2").animate({left: "+=150px"}, 800).animate({top: "+=150px"}, 800).animate({width: "50px", height: "50px"}, 800).animate({left: "0px", top: "0px", width: "100px", height: "100px"}, 1000);
+
+				$("#div3").animate({
+					left: "150px",
+					top: "100px",
+					width: "200px",
+					height: "200px",
+					opacity: 0.2,
+				}, 1500);
+			});
+		</script>
+	</head>
+	<body style="display: flex; flex-direction: column;">
+		<div id="div1" style="background-color: blue; width: 100px; height: 100px; position: relative;"></div>
+		<div id="div2" style="background-color: red; width: 100px; height: 100px; position: relative;"></div>
+		<div id="div3" style="background-color: lime; width: 100px; height: 100px; position: relative;"></div>
+	</body>
+</html>

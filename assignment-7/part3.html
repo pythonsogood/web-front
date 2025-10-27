@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+		<title>Document</title>
+		<script>
+			function append() {
+				const ul = $("ul");
+				ul.append(`<li>item ${ul.children().length}</li>`);
+			}
+
+			function prepend() {
+				const ul = $("ul");
+				ul.prepend(`<li>item ${ul.children().length}</li>`);
+			}
+
+			function remove() {
+				const ul = $("ul");
+				ul.children().last().remove();
+			}
+
+			function changeimg() {
+				$("img").attr("src", "about.jpg");
+			}
+
+			function changelink() {
+				$("a").attr("href", "https://stackoverflow.com");
+			}
+
+			function forminput() {
+				$("#uname").text(`your name: ${$("input[name=name]").val()}`);
+				$("#uemail").text(`your email: ${$("input[name=email]").val()}`);
+			}
+		</script>
+	</head>
+	<body style="display: flex; flex-direction: column;">
+		<ul></ul>
+		<button onclick="append();">Add Item</button>
+		<button onclick="prepend();">Add to start Item</button>
+		<button onclick="remove();">Remove Item</button>
+
+		<img src="dog.jpg" alt="dog.jpg" style="max-width: 300px;">
+		<button onclick="changeimg();">change img</button>
+
+		<a href="https://google.com">link</a>
+		<button onclick="changelink();">change link</button>
+
+		<form oninput="forminput();">
+			<label>Name: <input type="text" name="name" maxlength="64" required></label>
+			<label>Email: <input type="email" name="email" maxlength="254" required></label>
+		</form>
+
+		<div id="uname">your name: </div>
+		<div id="uemail">your email: </div>
+	</body>
+</html>

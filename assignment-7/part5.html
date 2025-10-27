@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+		<title>Document</title>
+		<script>
+			$(document).ready(() => {
+				const ball = $("#ball");
+
+				let speed_horizontal = 12;
+				let speed_vertical = 12;
+
+				let pos_x = 100;
+				let pos_y = 100;
+
+				function moveBall() {
+					pos_x += speed_horizontal;
+					pos_y += speed_vertical;
+
+					const screen_width = $(window).width() - ball.width();
+					const screen_height = $(window).height() - ball.height();
+
+					if (pos_x <= 0 || pos_x >= screen_width) {
+						speed_horizontal = -speed_horizontal;
+					}
+
+					if (pos_y <= 0 || pos_y >= screen_height) {
+						speed_vertical = -speed_vertical;
+					}
+
+					ball.animate({left: pos_x, top: pos_y}, 20, moveBall);
+				}
+
+				moveBall();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="ball" style="width: 100px; height: 100px; background-color: crimson; border-radius: 50%; position: relative;"></div>
+	</body>
+</html>

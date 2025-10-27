@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+		<title>Document</title>
+		<script>
+			function hide() {
+				$("#p1").hide();
+			}
+
+			function show() {
+				$("#p1").show();
+			}
+
+			function toggle() {
+				$("#p1").toggle();
+			}
+
+			function fadeIn() {
+				$("img").fadeIn();
+			}
+
+			function fadeOut() {
+				$("img").fadeOut();
+			}
+
+			function fadeToggle() {
+				$("img").fadeToggle();
+			}
+
+			function slideUp() {
+				$("#p2").slideUp();
+			}
+
+			function slideDown() {
+				$("#p2").slideDown();
+			}
+
+			function slideToggle() {
+				$("#p2").slideToggle();
+			}
+		</script>
+	</head>
+	<body style="display: flex; flex-direction: column;">
+		<p id="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt ipsam quaerat libero voluptas neque quasi magni iste iure, ex, omnis quisquam dolorem ab dignissimos odit numquam ratione accusamus eos expedita.</p>
+		<button onclick="hide();">hide</button>
+		<button onclick="show();">show</button>
+		<button onclick="toggle();">toggle</button>
+
+		<img src="dog.jpg" alt="dog.jpg" style="max-width: 300px;">
+		<button onclick="fadeIn();">fade in</button>
+		<button onclick="fadeOut();">fade out</button>
+		<button onclick="fadeToggle();">fade toggle</button>
+
+		<button onclick="slideUp();">slide up</button>
+		<button onclick="slideDown();">slide down</button>
+		<button onclick="slideToggle();">slide toggle</button>
+		<p id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet optio repellendus voluptate illo quibusdam fugiat quaerat dolor eveniet recusandae. Repellendus deleniti quasi non rem reprehenderit velit ratione et excepturi voluptate?</p>
+	</body>
+</html>
