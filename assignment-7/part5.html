@@ -6,14 +6,16 @@
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 		<title>Document</title>
 		<script>
+			const speed = 12;
+
+			let speed_horizontal = 12;
+			let speed_vertical = 12;
+
+			let pos_x = 0;
+			let pos_y = 0;
+
 			$(document).ready(() => {
 				const ball = $("#ball");
-
-				let speed_horizontal = 12;
-				let speed_vertical = 12;
-
-				let pos_x = 100;
-				let pos_y = 100;
 
 				function moveBall() {
 					pos_x += speed_horizontal;
@@ -22,22 +24,38 @@
 					const screen_width = $(window).width() - ball.width();
 					const screen_height = $(window).height() - ball.height();
 
-					if (pos_x <= 0 || pos_x >= screen_width) {
-						speed_horizontal = -speed_horizontal;
+					if (pos_x <= 0) {
+						speed_horizontal = speed;
 					}
 
-					if (pos_y <= 0 || pos_y >= screen_height) {
-						speed_vertical = -speed_vertical;
+					if (pos_x >= screen_width) {
+						speed_horizontal = -speed;
+					}
+
+					if (pos_y <= 0) {
+						speed_vertical = speed;
+					}
+
+					if (pos_y >= screen_height) {
+						speed_vertical = -speed;
 					}
 
 					ball.animate({left: pos_x, top: pos_y}, 20, moveBall);
 				}
+
+				$(document).mousedown((e) => {
+					speed_vertical = speed;
+					speed_horizontal = Math.random() > 0.5 ? speed : -speed;
+
+					pos_x = e.clientX - ball.width() / 2;
+					pos_y = e.clientY - ball.height() / 2;
+				});
 
 				moveBall();
 			});
 		</script>
 	</head>
 	<body>
-		<div id="ball" style="width: 100px; height: 100px; background-color: crimson; border-radius: 50%; position: relative;"></div>
+		<div id="ball" style="width: 15vw; height: 15vw; background-color: crimson; border-radius: 50%; position: relative;"></div>
 	</body>
 </html>
