@@ -21,8 +21,22 @@ async function loadViews() {
 	}
 }
 
+function loadBootstrapForms() {
+	for (const form of document.querySelectorAll("form.needs-validation")) {
+		form.addEventListener("submit", event => {
+			if (!form.checkValidity()) {
+				event.preventDefault();
+				event.stopPropagation();
+			}
+
+			form.classList.add("was-validated");
+		}, false);
+	}
+}
+
 async function OnDOMLoaded() {
 	await loadViews();
+	loadBootstrapForms();
 }
 
 document.addEventListener("DOMContentLoaded", OnDOMLoaded);
