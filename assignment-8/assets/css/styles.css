@@ -1,9 +1,6 @@
 :root {
 	--bg-primary: white;
 	--bg-secondary: lightgray;
-	--bg-tertiary: #f0f0f0;
-	--text-secondary: #1b2333;
-	--text-tertiary: #666d79;
 }
 
 html, body {
@@ -29,6 +26,11 @@ main {
 
 .container {
 	background-color: var(--bg-primary);
+	border-radius: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
 }
 
 footer {
@@ -42,12 +44,13 @@ footer {
 }
 
 .footer-nav-title {
-	color: var(--text-tertiary);
+	color: var(--bs-secondary-color);
+	font-weight: 500;
 }
 
 footer .nav-link {
-	color: var(--text-secondary);
 	width: fit-content;
+	font-weight: 500;
 }
 
 footer .nav-link:hover {
