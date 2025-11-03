@@ -1,0 +1,27 @@
+.posts {
+	max-width: 900px;
+}
+
+.post:nth-child(even) {
+	background-color: var(--bg-tertiary);
+}
+
+.post .body {
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	line-clamp: 4;
+	line-height: 1.35em;
+	-webkit-box-orient: vertical;
+}
+
+@media (max-width: 767.98px) {
+	.posts {
+		max-width: 500px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.posts {
+		max-width: 700px;
+	}
+}

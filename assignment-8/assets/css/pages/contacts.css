@@ -1,0 +1,7 @@
+.contacts a {
+	text-decoration: none;
+}
+
+.contacts a:hover .link {
+	text-decoration: underline;
+}
