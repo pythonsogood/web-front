@@ -9,54 +9,56 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/styles.css">
-		<link rel="stylesheet" href="assets/css/pages/atricles.css">
+		<link rel="stylesheet" href="assets/css/pages/articles.css">
 		<script src="assets/js/script.js"></script>
 	</head>
 	<body>
 		<header data-import="header"></header>
 		<main>
 			<div class="container my-4">
-				<div class="my-4 mx-auto post overflow-hidden w-75 row border border-black rounded-2">
-					<img class="col-md-4 col-12 p-0 mh-100 mw-100 image" src="./assets/images/post3.png" loading="lazy" alt="image">
-					<div class="col-md-8 col-12 px-3 h-100 py-1 text d-flex flex-column">
-						<a class="text-decoration-none text-black fs-4 fw-semibold title" href="/posts/1.html">Owner is celebrating birthday today!</a>
-						<p class="overflow-y-hidden body mb-2">Happy birthday me!</p>
-						<div class="border-top border-black d-flex justify-content-between statistics fs-6">
-							<div>
-								488 <span class="material-symbols-outlined fs-5 like">favorite</span> 2 <span class="material-symbols-outlined fs-5 comment">comment</span>
-							</div>
-							<div>
-								743 <span class="material-symbols-outlined fs-5 views">visibility</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="my-4 mx-auto post overflow-hidden w-75 row border border-black rounded-2">
-					<img class="col-md-4 col-12 p-0 mh-100 mw-100 image" src="./assets/images/post2.jpg" loading="lazy" alt="image">
-					<div class="col-md-8 col-12 px-3 h-100 py-1 text d-flex flex-column">
-						<a class="text-decoration-none text-black fs-4 fw-semibold title" href="/posts/2.html">My Blog update</a>
-						<p class="overflow-y-hidden body mb-2">I slightly updated styles for this blogpost.</p>
-						<div class="border-top border-black d-flex justify-content-between statistics fs-6">
-							<div>
-								73 <span class="material-symbols-outlined fs-5 like">favorite</span> 1 <span class="material-symbols-outlined fs-5 comment">comment</span>
-							</div>
-							<div>
-								192 <span class="material-symbols-outlined fs-5 views">visibility</span>
+				<div id="articles" class="g-3 row row-cols-2 mx-auto">
+					<div class="post col mx-auto">
+						<img class="col-md-4 col-12 p-0 mh-100 mw-100 float-start image" src="./assets/images/post3.png" loading="lazy" alt="image">
+						<div class="col-md-8 col-12 px-3 h-100 py-1 text d-flex flex-column">
+							<a class="text-decoration-none text-black fs-4 fw-semibold title" href="/posts/1.html">Owner is celebrating birthday today!</a>
+							<p class="overflow-y-hidden body mb-2">Happy birthday me!</p>
+							<div class="border-top border-black d-flex justify-content-between statistics fs-6">
+								<div>
+									488 <span class="material-symbols-outlined fs-5 like">favorite</span> 2 <span class="material-symbols-outlined fs-5 comment">comment</span>
+								</div>
+								<div>
+									743 <span class="material-symbols-outlined fs-5 views">visibility</span>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="my-4 mx-auto post overflow-hidden w-75 row border border-black rounded-2">
-					<img class="col-md-4 col-12 p-0 mh-100 mw-100 image" src="./assets/images/post1.gif" loading="lazy" alt="image">
-					<div class="col-md-8 col-12 px-3 h-100 py-1 text d-flex flex-column">
-						<a class="text-decoration-none text-black fs-4 fw-semibold title" href="/posts/3.html">Hello everyone!</a>
-						<p class="overflow-y-hidden body mb-2">This is my first blog post. I hope you'll enjoy it!</p>
-						<div class="border-top border-black d-flex justify-content-between statistics fs-6">
-							<div>
-								15 <span class="material-symbols-outlined fs-5 like">favorite</span> 0 <span class="material-symbols-outlined fs-5 comment">comment</span>
+					<div class="post col">
+						<img class="col-md-4 col-12 p-0 mh-100 mw-100 image" src="./assets/images/post2.jpg" loading="lazy" alt="image">
+						<div class="col-md-8 col-12 px-3 h-100 py-1 text d-flex flex-column">
+							<a class="text-decoration-none text-black fs-4 fw-semibold title" href="/posts/2.html">My Blog update</a>
+							<p class="overflow-y-hidden body mb-2">I slightly updated styles for this blogpost.</p>
+							<div class="border-top border-black d-flex justify-content-between statistics fs-6">
+								<div>
+									73 <span class="material-symbols-outlined fs-5 like">favorite</span> 1 <span class="material-symbols-outlined fs-5 comment">comment</span>
+								</div>
+								<div>
+									192 <span class="material-symbols-outlined fs-5 views">visibility</span>
+								</div>
 							</div>
-							<div>
-								302 <span class="material-symbols-outlined fs-5 views">visibility</span>
+						</div>
+					</div>
+					<div class="post col">
+						<img class="col-md-4 col-12 p-0 mh-100 mw-100 image" src="./assets/images/post1.gif" loading="lazy" alt="image">
+						<div class="col-md-8 col-12 px-3 h-100 py-1 text d-flex flex-column">
+							<a class="text-decoration-none text-black fs-4 fw-semibold title" href="/posts/3.html">Hello everyone!</a>
+							<p class="overflow-y-hidden body mb-2">This is my first blog post. I hope you'll enjoy it!</p>
+							<div class="border-top border-black d-flex justify-content-between statistics fs-6">
+								<div>
+									15 <span class="material-symbols-outlined fs-5 like">favorite</span> 0 <span class="material-symbols-outlined fs-5 comment">comment</span>
+								</div>
+								<div>
+									302 <span class="material-symbols-outlined fs-5 views">visibility</span>
+								</div>
 							</div>
 						</div>
 					</div>

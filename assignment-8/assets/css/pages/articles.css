@@ -1,0 +1,12 @@
+#articles {
+	/* display: flex; */
+	/* flex-direction: row; */
+}
+
+.post {
+	display: flex;
+	border-radius: 0.375rem;
+	border: 1px solid black;
+	overflow: hidden;
+	width: 45%;
+}
