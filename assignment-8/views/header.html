@@ -25,7 +25,7 @@
 <script>
 	for (const navbar of document.querySelectorAll("nav.navbar")) {
 		for (const navlink of navbar.querySelectorAll(".nav-link")) {
-			if (window.location.href == navlink.href) {
+			if (window.location.href == navlink.href || `${window.location.href}index.html` == navlink.href) {
 				navlink.classList.add("active");
 				navlink.ariaCurrent = "page";
 			} else {
