@@ -43,9 +43,27 @@ footer {
 	padding: 15px;
 }
 
+footer .row {
+	width: fit-content;
+}
+
+footer .col {
+	width: fit-content;
+}
+
 .footer-nav-title {
+	width: fit-content;
 	color: var(--bs-secondary-color);
 	font-weight: 500;
+}
+
+footer ul {
+	width: fit-content;
+	margin-bottom: 0;
+}
+
+footer .nav-item {
+	width: fit-content;
 }
 
 footer .nav-link {
@@ -55,6 +73,11 @@ footer .nav-link {
 
 footer .nav-link:hover {
 	text-decoration: underline;
+}
+
+footer .copyright {
+	margin-bottom: 0;
+	margin-top: 1rem;
 }
 
 @media (max-width: 575.98px) {
@@ -87,6 +110,7 @@ footer .nav-link:hover {
 		'GRAD' 0,
 		'opsz' 24;
 	vertical-align: middle;
+	user-select: none;
 }
 
 .material-symbols-outlined.like {
