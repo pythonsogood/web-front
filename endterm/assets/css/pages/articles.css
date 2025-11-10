@@ -2,6 +2,11 @@
 	height: 100%;
 }
 
+.card .card-body .card-text {
+	height: 4.5rem;
+	overflow: hidden;
+}
+
 .card-footer.statistics {
 	vertical-align: bottom;
 	display: flex;

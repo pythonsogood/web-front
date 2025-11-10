@@ -1,0 +1,56 @@
+#controls {
+	width: 50%;
+}
+
+#sort-by {
+	max-width: 150px;
+}
+
+#search-bar {
+	min-width: 150px;
+}
+
+#search-bar::placeholder {
+	text-align: center;
+}
+
+.entry.search-match {
+	--bs-table-color: #000;
+	--bs-table-bg: #e2e3e5;
+	--bs-table-border-color: #b5b6b7;
+	--bs-table-striped-bg: #d7d8da;
+	--bs-table-striped-color: #000;
+	--bs-table-active-bg: #cbccce;
+	--bs-table-active-color: #000;
+	--bs-table-hover-bg: #d1d2d4;
+	--bs-table-hover-color: #000;
+	color: var(--bs-table-color);
+	border-color: var(--bs-table-border-color);
+}
+
+.entry.search-match.search-match-best {
+	--bs-table-color: #000;
+	--bs-table-bg: #cfe2ff;
+	--bs-table-border-color: #a6b5cc;
+	--bs-table-striped-bg: #c5d7f2;
+	--bs-table-striped-color: #000;
+	--bs-table-active-bg: #bacbe6;
+	--bs-table-active-color: #000;
+	--bs-table-hover-bg: #bfd1ec;
+	--bs-table-hover-color: #000;
+	color: var(--bs-table-color);
+	border-color: var(--bs-table-border-color);
+}
+
+@media (max-width: 767.98px) {
+	#controls {
+		width: 95%;
+	}
+}
+
+
+@media (max-width: 991.98px) {
+	#controls {
+		width: 80%;
+	}
+}
