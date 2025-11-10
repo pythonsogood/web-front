@@ -10,13 +10,19 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/pages/articles.css">
+		<script src="https://rawcdn.githack.com/gf3/Levenshtein/refs/heads/master/lib/levenshtein.js"></script>
 		<script src="assets/js/script.js"></script>
+		<script src="assets/js/pages/articles.js"></script>
 	</head>
 	<body>
 		<header data-import="header"></header>
 		<main>
 			<div class="container my-4">
-				<div id="articles" class="row row-cols-1 row-cols-lg-2 g-4 mx-auto">
+				<div id="articles-search" class="mx-auto w-50">
+					<input type="search" placeholder="Search for an article..." class="search-bar w-100" id="articles-search-bar">
+				</div>
+
+				<div id="articles" class="row row-cols-1 my-2 row-cols-lg-2 g-4 mx-auto">
 					<div class="col">
 						<div class="card border-secondary">
 							<div class="row g-0">

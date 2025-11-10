@@ -89,6 +89,10 @@ footer .copyright {
 	margin-top: 1rem;
 }
 
+.search-bar {
+	border-radius: 0.75rem;
+}
+
 @media (max-width: 575.98px) {
 	body {
 		font-size: 14px;

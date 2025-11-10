@@ -16,6 +16,18 @@
 	margin-bottom: 0.05rem;
 }
 
+#articles.searching .card:not(.search-match) {
+	filter: grayscale(80%);
+}
+
+.card.search-match {
+	border-width: 0.15rem !important;
+}
+
+.card.search-match.search-match-best {
+	border-color: limegreen !important;
+}
+
 @media (max-width: 767.98px) {
 	#articles {
 		max-width: 500px;
