@@ -1,6 +1,15 @@
 :root {
 	--bg-primary: white;
 	--bg-secondary: lightgray;
+	--bg-tertiary: #f0f0f0;
+}
+
+.fit-content {
+	width: fit-content !important;
+}
+
+.hidden-no-important {
+	display: none;
 }
 
 html, body {

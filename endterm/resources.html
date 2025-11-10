@@ -8,25 +8,39 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/styles.css">
-		<link rel="stylesheet" href="assets/css/pages/index.css">
+		<link rel="stylesheet" href="assets/css/pages/resources.css">
 		<script src="assets/js/script.js"></script>
-		<script src="assets/js/pages/index.js"></script>
 	</head>
 	<body>
 		<header data-import="header"></header>
 		<main>
 			<div class="container my-4">
-				<h3 id="slogan" class="mx-auto text-center">
-					My Blog - change your
-					<span class="slogan-container text-primary" data-interval="1750">
-						<span class="slogan-word">mind</span>
-						<span class="slogan-word">vision</span>
-						<span class="slogan-word">life</span>
-						<span class="slogan-word">thinking</span>
-					</span>
-  					<span class="text-decoration-underline">now</span>
-				</h3>
-				<a role="button" href="/articles.html" class="btn btn-primary d-flex mt-3 mx-auto fit-content">Start reading</a>
+				<table class="table table-striped mb-0" border="2">
+					<thead>
+						<tr>
+							<th scope="col">Resource</th>
+							<th scope="col">Link</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td scope="row">Wikipedia</td>
+							<td><a class="link-dark" href="https://en.wikipedia.org/">https://en.wikipedia.org/</a></td>
+						</tr>
+						<tr>
+							<td scope="row">StackOverflow</td>
+							<td><a class="link-dark" href="https://stackoverflow.com/">https://stackoverflow.com/</a></td>
+						</tr>
+						<tr>
+							<td scope="row">GitHub</td>
+							<td><a class="link-dark" href="https://github.com/">https://github.com/</a></td>
+						</tr>
+						<tr>
+							<td scope="row">Bootstrap</td>
+							<td><a class="link-dark" href="https://getbootstrap.com/">https://getbootstrap.com/</a></td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</main>
 		<footer data-import="footer"></footer>

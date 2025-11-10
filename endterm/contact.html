@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/pages/contact.css">
 		<script src="assets/js/script.js"></script>
+		<script src="assets/js/pages/contact.js"></script>
 	</head>
 	<body>
 		<header data-import="header"></header>
@@ -23,14 +24,31 @@
 					<li class="list-group-item"><span class="fa fa-youtube"></span><a class="link-primary" href="https://youtube.com/@my_blog"> <span class="text-black">@</span><span class="link">my_blog</span></a></li>
 					<li class="list-group-item"><span class="fa fa-instagram"></span><a class="link-primary" href="https://instagram.com/@my_blog"> <span class="text-black">@</span><span class="link">my_blog</span></a></li>
 				</ul>
-				<button class="btn btn-primary d-flex mt-3 mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#feedback" aria-expanded="false" aria-controls="feedback">
+				<button id="share-toggle" class="btn btn-primary d-flex mt-3 mx-auto" type="button">
 					Share feedback
 				</button>
-				<div id="feedback" class="collapse mx-auto mt-4">
+				<div class="modal fade" id="share-terms-modal" tabindex="-1" aria-labelledby="share-terms-modal-label" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="share-terms-modal-label">Feedback Terms</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								By clicking "Accept" you are agreeing to not abuse Feedback form to violate laws.
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Dismiss</button>
+								<button type="button" id="share-terms-accept" class="btn btn-primary">Accept</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="feedback" class="collapse show mx-auto mt-4">
 					<form class="card card-body row needs-validation" novalidate>
 						<div class="mb-3 col-12 col-lg-8">
 							<label for="email" class="form-label">Email address</label>
-							<input type="email" class="form-control" id="email" aria-describedby="email-help" required>
+							<input type="email" pattern="^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$" class="form-control" id="email" aria-describedby="email-help" required>
 							<div id="email-help" class="form-text">We never share your email with third-parties.</div>
 							<div class="invalid-feedback">Please provide valid email.</div>
 							<div class="valid-feedback">Looks good!</div>

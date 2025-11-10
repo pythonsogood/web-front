@@ -1,3 +1,7 @@
+.contacts li:nth-child(even) {
+	background-color: var(--bg-tertiary);
+}
+
 .contacts a {
 	text-decoration: none;
 }
