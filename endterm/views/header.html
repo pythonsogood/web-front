@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg">
+	<div class="container-fluid">
+		<a class="navbar-brand lexend-deca-regular" href="/">My blog</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ms-auto my-2">
+				<li class="nav-item">
+					<a class="nav-link" href="/index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/articles.html">Articles</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<script>
+	for (const navbar of document.querySelectorAll("nav.navbar")) {
+		for (const navlink of navbar.querySelectorAll(".nav-link")) {
+			if (window.location.href == navlink.href || `${window.location.href}index.html` == navlink.href) {
+				navlink.classList.add("active");
+				navlink.ariaCurrent = "page";
+			} else {
+				if (navlink.classList.contains("active")) {
+					navlink.classList.remove("active");
+				}
+
+				if (navlink.ariaCurrent == "page") {
+					navlink.ariaCurrent = null;
+				}
+			}
+		}
+	}
+</script>

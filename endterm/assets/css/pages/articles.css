@@ -1,0 +1,29 @@
+.card .img-fluid {
+	height: 100%;
+}
+
+.card-footer.statistics {
+	vertical-align: bottom;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1rem;
+}
+
+.card-footer.statistics .material-symbols-outlined {
+	font-size: 1.2rem;
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	margin-bottom: 0.05rem;
+}
+
+@media (max-width: 767.98px) {
+	#articles {
+		max-width: 500px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	#articles {
+		max-width: 700px;
+	}
+}

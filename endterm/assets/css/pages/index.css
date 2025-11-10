@@ -1,0 +1,22 @@
+.slogan-container {
+	display: inline-block;
+	position: relative;
+	vertical-align: bottom;
+	overflow: hidden;
+	height: 1em;
+	transition: width 0.6s ease;
+}
+
+.slogan-container .slogan-word {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transform: translateY(-100%);
+	transition: all 0.6s ease;
+}
+
+.slogan-word.active {
+	opacity: 1;
+	transform: translateY(-15%);
+}
