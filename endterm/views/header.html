@@ -23,6 +23,13 @@
 				</li>
 			</ul>
 		</div>
+		<div id="theme-switcher" class="ms-2 d-flex mt-1 align-items-center justify-content-center">
+			<i class="fa fa-sun-o"></i>
+			<div class="form-check form-switch p-2">
+				<input id="theme-toggler" class="form-check-input m-0" type="checkbox" role="switch">
+			</div>
+			<i class="fa fa-moon-o"></i>
+		</div>
 	</div>
 </nav>
 <script>
@@ -42,4 +49,53 @@
 			}
 		}
 	}
+
+	function getStoredTheme() {
+		return localStorage.getItem("theme");
+	}
+
+	function setStoredTheme(theme) {
+		localStorage.setItem("theme", theme);
+	}
+
+	function getPreferredTheme() {
+		const storedTheme = getStoredTheme();
+		if (storedTheme != null) {
+			return storedTheme;
+		}
+
+		return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+	}
+
+	function setTheme(theme) {
+		if (theme == "auto") {
+			theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+		}
+
+		document.documentElement.setAttribute("data-bs-theme", theme);
+
+		const themeSwitcher = document.querySelector("#theme-toggler");
+		if (themeSwitcher != null) {
+			themeSwitcher.checked = theme == "dark";
+		}
+	}
+
+	window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+		const storedTheme = getStoredTheme();
+		if (storedTheme !== "light" && storedTheme !== "dark") {
+			setTheme(getPreferredTheme());
+		}
+	});
+
+	const themeSwitcher = document.querySelector("#theme-toggler");
+
+	if (themeSwitcher != null) {
+		themeSwitcher.addEventListener("click", () => {
+			const theme = themeSwitcher.checked ? "dark" : "light";
+			setStoredTheme(theme);
+			setTheme(theme);
+		});
+	}
+
+	setTheme(getPreferredTheme());
 </script>
