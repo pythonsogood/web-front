@@ -1,14 +1,30 @@
 [
 	{
-		"category": "city",
-		"image": "/assets/images/post4.png"
+		"categories": ["nature"],
+		"image": "/assets/images/gallery1.jpg"
 	},
 	{
-		"category": "city",
-		"image": "/assets/images/post4.png"
+		"categories": ["nature"],
+		"image": "/assets/images/gallery2.webp"
 	},
 	{
-		"category": "nature",
-		"image": "/assets/images/post4.png"
+		"categories": ["nature"],
+		"image": "/assets/images/gallery3.avif"
+	},
+	{
+		"categories": ["nature"],
+		"image": "/assets/images/gallery4.jpg"
+	},
+	{
+		"categories": ["city"],
+		"image": "/assets/images/gallery5.jpg"
+	},
+	{
+		"categories": ["city"],
+		"image": "/assets/images/gallery6.jpg"
+	},
+	{
+		"categories": ["city"],
+		"image": "/assets/images/gallery7.jpg"
 	}
 ]
