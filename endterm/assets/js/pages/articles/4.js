@@ -101,6 +101,12 @@ function OnDOMContentLoaded() {
 				return;
 			}
 
+			const sortby = document.querySelector("#sort-by");
+
+			if (sortby != null) {
+				sortby.value = "id";
+			}
+
 			table.push({
 				id: ++IDs,
 				first_name: sanitize(first_name.value),
@@ -193,8 +199,6 @@ function OnDOMContentLoaded() {
 		});
 	}
 
-	renderTable();
-
 	const searchbar = document.querySelector("#search-bar");
 
 	if (searchbar != null) {
@@ -258,6 +262,36 @@ function OnDOMContentLoaded() {
 			}
 		});
 	}
+
+	const sortby = document.querySelector("#sort-by");
+
+	if (sortby != null) {
+		sortby.addEventListener("change", () => {
+			const key = sortby.value;
+
+			table.sort((a, b) => {
+				if (typeof a[key] == "string" || typeof b[key] == "string") {
+					return a[key].localeCompare(b[key]);
+				}
+
+				return a[key] - b[key];
+			});
+
+			renderTable();
+		});
+
+		const key = sortby.value;
+
+		table.sort((a, b) => {
+			if (typeof a[key] == "string" || typeof b[key] == "string") {
+				return a[key].localeCompare(b[key]);
+			}
+
+			return a[key] - b[key];
+		});
+	}
+
+	renderTable();
 }
 
 document.addEventListener("DOMContentLoaded", OnDOMContentLoaded);
