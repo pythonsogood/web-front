@@ -185,7 +185,7 @@ function OnDOMContentLoaded() {
 				return;
 			}
 
-			table.pop(index);
+			table.splice(index, 1);
 
 			modal.hide();
 
