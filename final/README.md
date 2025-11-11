@@ -1,4 +1,4 @@
-# Endterm projct. Blog
+# Final projct. Blog
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/license/mit/)
 
